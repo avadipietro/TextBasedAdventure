@@ -1,8 +1,9 @@
 package game;
 
-import items.Item;
+import things.Item;
 import rooms.*;
-import people.Person;
+import things.Person;
+import board.Board;
 
 import java.util.Scanner;
 
@@ -25,15 +26,15 @@ public class GameRunner {
 
         }
 
-        School tech = new School(map);
+        Board tech = new Board(map);
 
 
         boolean gameOn = true;
-        Person player1 = Utilities.createPerson();
+        Person player1 = new Person(1, 'N', 6);
         Scanner in = new Scanner(System.in);
         while(gameOn)
         {
-            System.out.println("Welcome to the Halls of Tech, " + player1.getFirstName());
+            System.out.println("Welcome to the Halls of Tech, " + player1.getName());
             map[0][0].addOccupant(player1);
 
             tech.printMap();

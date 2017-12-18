@@ -1,7 +1,7 @@
 package rooms;
 
-import people.Person;
-import items.Item;
+import things.Item;
+import things.Person;
 
 
 public class Hallway extends Room {
@@ -15,7 +15,7 @@ public class Hallway extends Room {
     {
         if (getOccupants().length != 0)
         {
-            System.out.print(getOccupants()[0].print());
+            getOccupants()[0].printRoom();
         }
         else if (this.explored)
         {

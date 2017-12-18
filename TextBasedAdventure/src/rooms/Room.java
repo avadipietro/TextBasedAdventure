@@ -1,7 +1,7 @@
 package rooms;
 
-import people.Person;
-import items.Item;
+import things.Person;
+import things.Item;
 
 import java.util.Arrays;
 
