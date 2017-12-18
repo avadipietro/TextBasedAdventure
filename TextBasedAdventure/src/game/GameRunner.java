@@ -30,7 +30,7 @@ public class GameRunner {
 
 
         boolean gameOn = true;
-        Person player1 = new Person(1, 'N', 6);
+        Person player1 = new Person(1, "N", 6);
         Scanner in = new Scanner(System.in);
         while(gameOn)
         {
@@ -40,7 +40,7 @@ public class GameRunner {
             tech.printMap();
             player1.printRoom();
             String move = player1.chooseMove();
-            Utilities.movePlayer(tech, player1,move);
+            Person.movePlayer(tech, player1, move);
            // gameOn = false;
             
 
