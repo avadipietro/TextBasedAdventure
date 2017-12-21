@@ -8,7 +8,6 @@ public class Board {
     private Room[][] schoolMap;
 
 
-
     public Board(Room[][] schoolMap)
     {
         this.schoolMap = schoolMap;
