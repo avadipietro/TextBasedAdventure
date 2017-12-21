@@ -7,11 +7,11 @@ public class Person {
 	
 	public static Person Person;
 	private int floor;		// from 0 to 8
-	private char direction;	// NESW
+	private String direction;	// NESW
 	private int roomNumber; // from 1 to 24
 	private Room room;
 	
-	public Person (int floor, char direction, int roomNumber) {
+	public Person (int floor, String direction, int roomNumber) {
 		this.floor = floor;
 		this.direction = direction;
 		this.roomNumber = roomNumber;
@@ -28,7 +28,10 @@ public class Person {
 	/* MOVEMENTS:
 	 * player can change floors
 	 */
-	public void movePlayer(int floor, char direction, int steps) {
+	public String chooseMove() {
+		return "string";
+	}
+	public void movePlayer(String move) {
 		
 	}
 	
