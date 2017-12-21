@@ -41,14 +41,9 @@ public class GameRunner {
             player1.printRoom();
             String move = player1.chooseMove();
             player1.movePlayer(move);
+            player1.movePlayer(tech, player1, move);
            // gameOn = false;
-            
-
-
-
-
-
-
+          
 
         }
 		in.close();

@@ -1,5 +1,6 @@
 package things;
 import rooms.Room;
+import board.Board;
 
 import java.util.Scanner;
 
@@ -28,9 +29,6 @@ public class Person {
 	/* MOVEMENTS:
 	 * player can change floors
 	 */
-	public String chooseMove() {
-		return "string";
-	}
 	public void movePlayer(String move) {
 		
 	}
@@ -40,6 +38,13 @@ public class Person {
 	public String getName() {
 		String name = in.nextLine();
 		return name;
+	}
+	public String chooseMove() {
+		String direction = in.nextLine();
+		return direction;
+	}
+	public void movePlayer(Board board, Person player1, String move) {
+		
 	}
 
 }
