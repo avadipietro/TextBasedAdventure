@@ -104,6 +104,9 @@ public class GameRunner {
     				map[a][b].print();
 	    		}
     		}
+    		System.out.println();
+    		Board tech = new Board(map);
+    		tech.printMap();
     	
        /* Room[][] map = new Room[18][8];
         for (int j = 0; j<map.length; j++)
