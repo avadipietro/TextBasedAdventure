@@ -5,33 +5,36 @@ import rooms.Room;
 public class Board {
 
 
-    private Room[][] schoolMap;
+    private Room[][] board;
 
-
-    public Board(Room[][] schoolMap)
+    public Board(Room[][] board)
     {
-        this.schoolMap = schoolMap;
+        this.board = board;
     }
 
     public void printMap()
     {
 
 
-        for(Room[] row : schoolMap)
-        {
-            for (Room room : row)
+       // for(Room[][] row : board)
+      //  {
+            for (Room[] column : board)
             {
-                room.print();
+            		for (Room room : column)
+                {
+            			room.print();
+                }
+            		System.out.println();
             }
             System.out.println();
         }
-    }
-    public Room[][] getSchoolMap() {
-        return schoolMap;
+ //   }
+    public Room[][] getboard() {
+        return board;
     }
 
-    public void setSchoolMap(Room[][] schoolMap) {
-        this.schoolMap = schoolMap;
+    public void setboard(Room[][] board) {
+        this.board = board;
     }
 
 

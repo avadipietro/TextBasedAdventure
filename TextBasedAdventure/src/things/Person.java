@@ -23,7 +23,7 @@ public class Person {
 	}
 	
 	public void printRoom() {
-		System.out.print("★");
+		System.out.print("▓");
 	}
 	
 	/* MOVEMENTS:
