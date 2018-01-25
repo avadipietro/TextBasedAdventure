@@ -4,7 +4,7 @@ import things.Item;
 import things.Person;
 
 public class VoidRoom extends Room {
-
+	
 	public VoidRoom(Person[] occupants, Item[] items, int x, int y) {
 		super(occupants, items, x, y);
 	}

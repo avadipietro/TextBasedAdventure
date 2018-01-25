@@ -12,12 +12,9 @@ public class Board {
         this.board = board;
     }
 
+    // prints each room and element on map
     public void printMap()
     {
-
-    	
-       // for(Room[][] row : board)
-      //  {
             for (Room[] column : board)
             {
             		for (Room room : column)

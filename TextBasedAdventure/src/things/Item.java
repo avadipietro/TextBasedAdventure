@@ -67,12 +67,14 @@ public class Item {
 		System.out.print("*");
 	}
 	
+	// hides items based on difficulty
 	public void printRoom(String diff) {
 		if (diff.equals("h")) {
 			System.out.print(" ");
 		}
 	} 
-	 public static void viewItems(String[][] items) {
+	// views updated item list
+	public static void viewItems(String[][] items) {
 		 
 		boolean obtained = true;
 		 
