@@ -11,14 +11,19 @@ public class Classroom extends Room {
 
 	@Override
 	public void print() {
+		System.out.print("[");
 		if (getOccupants().length != 0)
         {
             getOccupants()[0].printRoom();
         }
+		else if (getItems().length != 0) {
+			getItems()[0].printRoom();
+		}
         else
         {
-            System.out.print("[ ]");
+            System.out.print(" ");
         }
+		System.out.print("]");
 		
 	}
 

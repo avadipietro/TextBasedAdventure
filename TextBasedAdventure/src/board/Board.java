@@ -15,7 +15,7 @@ public class Board {
     public void printMap()
     {
 
-
+    	
        // for(Room[][] row : board)
       //  {
             for (Room[] column : board)
@@ -29,13 +29,12 @@ public class Board {
             System.out.println();
         }
  //   }
-    public Room[][] getboard() {
+    public Room[][] getBoard() {
         return board;
     }
 
-    public void setboard(Room[][] board) {
+    public void setBoard(Room[][] board) {
         this.board = board;
     }
-
 
 }

@@ -13,13 +13,15 @@ public class Hallway extends Room {
 
     public void print()
     {
+    		System.out.print(" ");
         if (getOccupants().length != 0)
         {
             getOccupants()[0].printRoom();
         }
         else
         {
-            System.out.print("░░░");
+            System.out.print(" ");
         }
+        System.out.print(" ");
     }
 }

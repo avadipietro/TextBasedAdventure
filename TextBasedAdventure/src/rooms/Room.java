@@ -19,14 +19,13 @@ public abstract class Room {
         this.items = items;
     }
 
-    public  Person[] getOccupants() {
+    public Person[] getOccupants() {
         return occupants;
     }
 
     public void setOccupants(Person[] occupants) {
         this.occupants = occupants;
     }
-
     
     public void addOccupant(Person p)
     {
@@ -35,6 +34,21 @@ public abstract class Room {
         p.setRoom(this);
     }
     
+    public void setItems(Item[] items) {
+        this.items = items;
+    }
+    
+    public Item[] getItems() {
+        return items;
+    }
+    
+    public void addItem(Item i)
+    {
+        this.items = Arrays.copyOf(this.items, this.items.length+1);
+        this.items[this.items.length-1] = i;
+        i.setRoom(this);
+    }
+            
     public int getX()
     {
     	return x;
